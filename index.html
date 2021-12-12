@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
     <head>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
         <title>ЖК ВОЗРОЖДЕНИЕ</title>
     </head>
@@ -14,38 +15,40 @@
     <body>
         <header class="header">
             <nav class="container navbar">
-              <a href="/" class="logo">
-                ЖК на <div class="logon">Невском</div>
-              </a> 
-              <ul class="navbar__nav">
-                      <li><a href="#">О компании</a></li>
-                      <li><a href="#">Новости</a></li>
-                      <li><a href="#">Документы</a></li>
-                      <li><a href="#">Контакты</a></li>
-              </ul>
-              <div class="phone">
-                <p class="phone__num">+7 982 45-22-67</p>
-                <p class="rasp">Пн-Пт. с 8:00 до 19:00</p>
-            </div>
-            <button class=" btn btn-circle"><i class="fas fa-phone-alt"></i></button>
+                <a href="/" class="logo">
+                    ЖК на&nbsp;<span class="text-bold">Невском</span>
+                </a>
+                <ul class="navbar__nav">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Документы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="navbar-contacts">
+                    <div class="navbar-contacts__wrap">
+                        <p class="phone__num">+7 982 45-22-67</p>
+                        <p class="rasp">Пн-Пт. с 8:00 до 19:00</p>
+                    </div>
+                    <a href="tel:+0000000000" class="btn btn-circle"><i class="fas fa-phone-alt"></i></a>
+                </div>
             </nav>
         </header>
         <main>
-            <div>
-                <div class="container hero-image loc">
+            <section class="hero">
+                <div class="container">
                     <div class="hero-text">
-                        <h1>Доступные квартиры</h1>
-                        <h1>от 1,6 млн.руб в Рыбинске</h1>
-                        <h2>Сдача дома: декабрь 2021 год</h2>
+                        <h1>Доступные квартиры <br> от 1,6 млн.руб в Рыбинске</h1>
+                        <h2 class="title">Сдача дома: декабрь 2021 год</h2>
+                        <div class="hero-btns">
+                            <button class="btn btn-primary btn-icon btn-lg">Выбрать квартиру<i
+                                    class="far fa-building"></i></button>
+                            <button class="btn btn-outlined btn-icon btn-lg">Получить консультацию</button>
+                        </div>
                     </div>
-                    <button class="btn btn-primary btn-icon">Выбрать квартиру<i class="fas fa-mobile-alt"></i></button>
-                    <button class="btn btn-outlined btn-icon">Получить консультацию</button>
                 </div>
-            </div>
-
+            </section>
         </main>
         <footer>
-
         </footer>
     </body>
 
