@@ -604,22 +604,64 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 560px;
+  height: 453px;
   background-color:#fff;
   border-radius: 20px;
   overflow: hidden;
 }
 .layout__img {
-  width: 455px;
-  height: 500px;
+  width: 380px;
+  height: 380px;
   object-fit: cover;
   padding: 36.5px 60px;
+  box-sizing: content-box;/*свойства width и height задают ширину и высоту контента и не включают в себя значения отступов, полей и границ.*/
 }
-.a{
+.layout__img__space{
+  width: 620px;
+  height: 453px;
+  display: inline-flex;
+  justify-self: center;
+  align-items: center;
+}
+.layout__rooms{
   width: 580px;
   height: 373px;
   background-color: var(--blue-01);
   border-radius: 10px;
   overflow: hidden;
+  box-sizing: content-box;
+}
+.layout__btn{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.layout__btn_shell{
+  background-color: #fff;
+  width: 500px;
+  height: 70px;
+  margin: 40px 40px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  align-items: center;
+}
+.layout__btn-sm{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 235px;
+  height: 50px;
+  margin: 10px 5px;
+  border-radius: 999px;
+}
+.layout__text{
+  text-align: center;
+  color: var(--blue-03);
+}
+.layout__btn-lg{
+  display: flex;
+  justify-content: center;
+  margin: 20px 99.5px 40px 135.5px;
 }
 /*====================LAYOUT END=======================*/
