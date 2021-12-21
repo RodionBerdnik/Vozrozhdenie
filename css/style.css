@@ -318,7 +318,18 @@ table {
 }
 /*====================RESET END=======================*/
 /*====================COMMON START=======================*/
-
+:root {
+  --blue-01: #f2f9ff;
+  --blue-02: #007fff;
+  --blue-03: #002040;
+  --blue-bg: #f9fcff;
+  --blue-gradient: linear-gradient(#409fff, #007fff);
+  --white: #ffffff;
+  --gray-01: #f2f2f2;
+  --gray-02: #bfbfbf;
+  --gray-03: #404040;
+  --green-01: #00bf5f;
+}
 * {
   box-sizing: border-box;
 }
@@ -331,6 +342,8 @@ body {
     'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 400;
   font-size: 16px;
+  color: var(--blue-03);
+  padding-bottom: 1000px; /*dev only*/
 }
 a {
   display: inline-flex;
@@ -338,33 +351,20 @@ a {
   color: inherit;
 }
 
-:root {
-  --blue-01: #f2f9ff;
-  --blue-02: #007fff;
-  --blue-03: #002040;
-  --blue-bg: #f9fcff;
-  --blue-gradient: linear-gradient(#409fff, #007fff);
-  --white: #ffffff;
-  --gray-01: #F2F2F2;
-  --gray-02: #bfbfbf;
-  --gray-03: #404040;
-  --green-01: #00bf5f;
-}
-
 h1 {
   font-size: 48px;
   font-weight: 500;
-}
-h2{
-  font-size: 36px;
-  font-weight: 500;
+  margin-bottom: 20px;
 }
 .title {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
 }
 .subtitle {
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 600;
 }
 .text-md {
   font-weight: 500;
@@ -374,6 +374,9 @@ h2{
 }
 .text-bold {
   font-weight: 700;
+}
+.section {
+  margin-top: 160px;
 }
 button {
   font: inherit;
@@ -390,6 +393,7 @@ button {
   padding: 15px 45px;
   border: 1px solid transparent;
   align-items: center;
+  justify-content: center;
 }
 .btn-sm {
   padding: 10px 20px;
@@ -503,7 +507,7 @@ button {
 
 /*====================HERO END=======================*/
 /*====================BENEFITS START=======================*/
-.benefits-wrap{
+.benefits-wrap {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
@@ -511,23 +515,23 @@ button {
 .benefit {
   border-radius: 20px;
   overflow: hidden;
-  position: relative; 
+  position: relative;
 }
 .benefit__img {
   width: 400px;
   height: 400px;
   object-fit: cover;
 }
-.benefit__img__text{
+.benefit__img__text {
   text-align: center;
   line-height: 30px;
 }
-.benefit__caption{
+.benefit__caption {
   position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  text-align: center;
+  transform: translateX(-50%);
+  left: 50%;
+  top: calc(50% - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -535,133 +539,120 @@ button {
   color: #fff;
   gap: 10px;
 }
-.benefit__title{
+.benefit__caption > svg {
+  width: 100px;
+  height: 80px;
+}
+.benefit__title {
   text-align: center;
-  font-size:36px;
-  margin-top:160px;
+  font-size: 36px;
+  margin-top: 160px;
   margin-bottom: 60px;
-  color:var(--blue-03);
+  color: var(--blue-03);
 }
 /*====================BENEFITS END=======================*/
 
 /*====================MAP START=======================*/
-.map{
+.map {
   position: relative;
 }
-.map iframe{
+.map__title {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 160px;
+  margin-bottom: 60px;
+}
+.map iframe {
   display: block;
   width: 100%;
   height: 700px;
 }
-.map__details{
+.map__details {
   position: absolute;
   bottom: 40px;
   right: 80px;
-  width: 300px;
-  height: 340px;
+  max-width: 300px;
   border-radius: 20px;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.603);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.75);
 }
-.map__title{
-  text-align: center;
-  font-size:36px;
-  margin-top:160px;
-  margin-bottom: 60px;
-  color:var(--blue-03);
-}
-.top__pointer{
+
+.pointer {
   display: inline-flex;
-  flex-wrap: nowrap;
-  padding: 40px 15px 0 40px;
+  align-items: center;
+  gap: 15px;
 }
-.pointer{
-  display: inline-flex;
-  flex-wrap: nowrap;
-  padding: 0 15px 0 40px;
+.pointer__img {
+  width: 40px;
+  height: 50px;
 }
-.top__pointer__text{
-  padding: 14px 94px 14px 0;
-  color: var(--blue-03);
-}
-.pointer__text{
-  padding: 14px 40px 14px 0;
-  color: var(--blue-03);
-}
+
 /*====================MAP END=======================*/
 
 /*====================LAYOUT START=======================*/
-.layout__title{
+.layout__title {
   text-align: center;
-  font-size:36px;
-  margin-top:160px;
+  font-size: 36px;
+  margin-top: 160px;
   margin-bottom: 60px;
-  color:var(--blue-03);
+  color: var(--blue-03);
 }
-.layout{
-  display: inline-flex;
-  flex-wrap: nowrap;
+.layout {
+  padding: 40px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 453px;
-  background-color:#fff;
+  gap: 40px;
+  background-color: #fff;
   border-radius: 20px;
-  overflow: hidden;
+  box-shadow: 0 20px 20px 0 rgba(0, 63, 128, 0.05);
+}
+.layout__img-wrap {
+  padding: 0 120px 0 80px;
 }
 .layout__img {
   width: 380px;
   height: 380px;
-  object-fit: cover;
-  padding: 36.5px 60px;
-  box-sizing: content-box;/*свойства width и height задают ширину и высоту контента и не включают в себя значения отступов, полей и границ.*/
+  object-fit: contain;
 }
-.layout__img__space{
-  width: 620px;
-  height: 453px;
-  display: inline-flex;
-  justify-self: center;
-  align-items: center;
-}
-.layout__rooms{
+
+.layout__rooms {
   width: 580px;
-  height: 373px;
   background-color: var(--blue-01);
   border-radius: 10px;
-  overflow: hidden;
-  box-sizing: content-box;
-}
-.layout__btn{
+  padding: 40px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  
 }
-.layout__btn_shell{
+.layout__btn-wrap {
+  display: flex;
+  gap: 10px;
   background-color: #fff;
-  width: 500px;
-  height: 70px;
-  margin: 40px 40px;
   border-radius: 999px;
   font-weight: 700;
   border: 1px solid transparent;
-  align-items: center;
+  padding: 10px;
+  margin-bottom: 40px;
 }
-.layout__btn-sm{
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  width: 235px;
-  height: 50px;
-  margin: 10px 5px;
-  border-radius: 999px;
+.layout-btn {
+  flex-grow: 1;
 }
-.layout__text{
+.layout-btn-action {
+  align-self: center;
+}
+
+.layout__text {
   text-align: center;
-  color: var(--blue-03);
+  margin-bottom: 20px;
 }
-.layout__btn-lg{
-  display: flex;
-  justify-content: center;
-  margin: 20px 99.5px 40px 135.5px;
+.layout__text > span {
+  font-size: 36px;
 }
 /*====================LAYOUT END=======================*/
