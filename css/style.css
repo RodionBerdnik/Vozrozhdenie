@@ -405,7 +405,7 @@ button {
   gap: 25px;
 }
 .btn-primary {
-  color: #fff;
+  color: rgb(255, 255, 255);
   background: var(--blue-gradient);
 }
 .btn-secondary {
@@ -595,15 +595,15 @@ button {
 
 /*====================MAP END=======================*/
 
-/*====================LAYOUT START=======================*/
-.layout__title {
+/*====================PLANNING START=======================*/
+.planning__title {
   text-align: center;
   font-size: 36px;
   margin-top: 160px;
   margin-bottom: 60px;
   color: var(--blue-03);
 }
-.layout {
+.planning-wrap {
   padding: 40px;
   display: flex;
   justify-content: center;
@@ -613,25 +613,23 @@ button {
   border-radius: 20px;
   box-shadow: 0 20px 20px 0 rgba(0, 63, 128, 0.05);
 }
-.layout__img-wrap {
+.planning__img-wrap {
   padding: 0 120px 0 80px;
 }
-.layout__img {
+.planning__img {
   width: 380px;
   height: 380px;
   object-fit: contain;
 }
-
-.layout__rooms {
+.planning__rooms {
   width: 580px;
   background-color: var(--blue-01);
   border-radius: 10px;
   padding: 40px;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
 }
-.layout__btn-wrap {
+.planning__btn-wrap {
   display: flex;
   gap: 10px;
   background-color: #fff;
@@ -641,18 +639,73 @@ button {
   padding: 10px;
   margin-bottom: 40px;
 }
-.layout-btn {
+.planning-btn {
   flex-grow: 1;
 }
-.layout-btn-action {
+.planning-btn-action {
   align-self: center;
 }
 
-.layout__text {
+.planning__text {
   text-align: center;
   margin-bottom: 20px;
 }
-.layout__text > span {
+.planning__text > span {
   font-size: 36px;
 }
-/*====================LAYOUT END=======================*/
+/*====================PLANNING END=======================*/
+
+/*====================BUYING START=======================*/
+.buying-wrap{
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 320px;
+  display: flex;
+  gap:40px;
+}
+.buying__options-wrap_horisontal {
+  background-color: var(--blue-01);
+  border-radius: 20px;
+}
+.buying__options-wrap_horisontal-position{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.buying__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 40px;
+  gap:40px;
+}
+.buying__icon-img {
+  width: 90px;
+  height: 90px;
+}
+.buying__text{
+  display: flex;
+  flex-direction: column;
+}
+.buying__text>h2{
+  margin-bottom: 10px;
+}
+.buying__options-wrap_vertical {
+  background-color: var(--blue-01);
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 138px 40px;
+}
+.buying__options-wrap_vertical+h3{
+  font-weight: 18px;
+}
+h3+p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 24px;
+}
+p+button{
+  white-space: nowrap;
+}
+/*====================BUYING END=======================*/
