@@ -709,3 +709,37 @@ p+button{
   white-space: nowrap;
 }
 /*====================BUYING END=======================*/
+
+/*====================GALLERY START=======================*/
+.gallery {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-wrap {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.gallery__img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.gallery__img_arrow-left{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  left: 5%;
+  top: calc(50% - 25px);
+}
+.gallery__img_arrow-right{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  right: 5%;
+  top: calc(50% - 25px);
+}
+/*====================GALLERY END=======================*/
