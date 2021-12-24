@@ -743,3 +743,27 @@ p+button{
   top: calc(50% - 25px);
 }
 /*====================GALLERY END=======================*/
+
+/*====================PARTNERS START=======================*/
+.partners {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  gap:40px;
+  box-shadow: 0 20px 20px 0 rgba(0, 63, 128, 0.05);
+margin-bottom: 200px;
+}
+.partners-wrap {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+
+}
+.partners__img{
+  width: 320px;
+  height: 80px;
+}
+/*====================PARTNERS END=======================*/
