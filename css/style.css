@@ -767,3 +767,65 @@ margin-bottom: 200px;
   height: 80px;
 }
 /*====================PARTNERS END=======================*/
+
+/*====================FOOTER START=======================*/
+.footer{
+  width: 100%;
+  background-color:var(--blue-03);
+  padding: 40px 320px;
+  border: 1px #fff solid;
+  color:#fff
+}
+.footer__questions{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-end;
+  gap:30px;
+}
+.footer__questions_text{
+  text-align: center;
+}
+.footer__logo{
+  font-size: 24px;
+}
+.footer__questions_text>h2{
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.footer-btn{
+  background-color: #fff;
+  padding: 30px 60px;
+}
+.footer-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-wrap-contacts{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.footer__contacts{
+  display: flex;
+  gap:40px;
+}
+.footer__contacts_num{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.footer__contacts_email{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.footer__contacts_address{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+
+/*====================FOOTER END=======================*/
