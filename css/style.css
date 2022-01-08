@@ -540,7 +540,7 @@ button {
 /*====================HERO START=======================*/
 
 .hero {
-  padding: 120px 0 160px 0;
+  padding: 105px 0 160px 0;
   min-height: 800px;
   background: url('../img/hero-bg.webp') #e0e0e0 no-repeat center top / cover;
   display: flex;
@@ -802,6 +802,40 @@ button {
 }
 /*====================GALLERY END=======================*/
 
+/*====================REVIEWS START=======================*/
+.reviews-wrap {
+  display: flex;
+  justify-content: center;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 40px;
+}
+.reviews-person{
+  display: flex;
+  gap: 20px;
+}
+.review-person-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.person-comment{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.reviews__img {
+  width: 60px;
+  height: 60px;
+}
+/*====================REVIEWS END=======================*/
+
 /*====================PARTNERS START=======================*/
 .partners-wrap {
   display: flex;
@@ -821,7 +855,6 @@ button {
   object-fit: contain;
 }
 /*====================PARTNERS END=======================*/
-
 /*====================FOOTER START=======================*/
 
 .footer {
@@ -1039,6 +1072,12 @@ button {
   .container {
     max-width: 540px;
   }
+  .title{
+  padding: 0 20px;
+  }
+  .navbar-mobile {
+    padding: 0 20px;
+}
   .navbar {
     display: none;
   }
@@ -1084,6 +1123,7 @@ button {
     align-items: center;
     gap: 10px;
    flex-direction: column;
+   padding: 0;
   }
   .hero-btn-mobile .btn{
     padding: 30px 0;
@@ -1133,6 +1173,9 @@ button {
 .buying-wrap {
   flex-direction: column;
 }
+.reviews{
+  max-width: 400px;
+}
 .partners{
   display: flex;
   justify-content: center;
@@ -1178,6 +1221,71 @@ button {
   .container {
     max-width: 100%;
   }
+  .title{
+    font-size: 20px;
+  }
+  .header {
+    padding: 30px 0;
+}
+  .hero-mobile-text>h1 {
+    padding: 0 20px;
+}
+  .header-mobile__logo {
+    height: 40px;
+    width: 175px;
+}
+.btn-sm {
+  padding: 8px 12px;
+}
+.benefits-wrap {
+  padding: 0 20px;
+}
+.benefit__caption {
+  top: calc(50% - 20%);
+  gap: 0;
+  margin-left: 0;
+}
+.benefit__caption > svg {
+  width: 60px;
+  height: 45px;
+}
+.planning__img {
+  width: 360px;
+  height: 240px;
+}
+.planning-wrap {
+  padding: 0 20px;
+}
+.planning__rooms {
+  background-color: #fff;
+  padding: 0;
+}
+.planning__btn-wrap {
+  box-shadow: 0 20px 20px 0 rgba(0, 63, 128, 0.05);
+}
+.planning__btn-wrap>.btn{
+  padding: 5px 45px;
+}
+.buying-bottom {
+  padding: 40px 20px;
+}
+.buying__options-wrap_horisontal {
+  gap: 15px;
+}
+.reviews-wrap {
+  padding: 0 20px;
+}
+.partners-wrap {
+  padding: 0 20px;
+}
+.footer-line {
+  padding: 40px 20px;
+}
+.footer-line_documents {
+  gap: 20px;
+}
+.footer-line_networks {
+  gap: 80px;
 }
 /* `xsm` applies to x-small devices (portrait phones, equals to 320px) */
 @media (max-width: 320px) {
@@ -1221,4 +1329,5 @@ button {
 }
 .slider-next {
   right: 20px;
+}
 }
