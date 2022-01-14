@@ -16,3 +16,20 @@ const mySlider = new Swiper('.my-slider', {
     },
   },
 });
+const reviewsSlider = new Swiper('.reviews-slider', {
+  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+});
+
+

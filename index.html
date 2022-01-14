@@ -9,7 +9,574 @@
         <meta name="description" content="Доступные квартиры от 1,6 млн.руб в Рыбинске">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
+            /*====================FONTS START=======================*/
 
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3gTD_u50.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3gbD_u50.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3gfD_u50.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_bZF3gTD_u50.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_bZF3g3D_u50.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_bZF3gbD_u50.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_bZF3gfD_u50.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE3gTD_u50.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE3g3D_u50.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE3gbD_u50.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE3gfD_u50.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*====================FONTS END=======================*/
+/*====================RESET START=======================*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*====================RESET END=======================*/
+/*====================COMMON START=======================*/
+:root {
+  --blue-01: #f2f9ff;
+  --blue-02: #006edb;
+  --blue-03: #002040;
+  --blue-bg: #f9fcff;
+  --blue-gradient: linear-gradient(#409fff, #007fff);
+  --white: #ffffff;
+  --gray-01: #f2f2f2;
+  --gray-02: #bfbfbf;
+  --gray-03: #404040;
+  --green-01: #00bf5f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--blue-bg);
+}
+
+body {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--blue-03);
+  padding-bottom: 1000px; /*dev only*/
+}
+
+a {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.text-md {
+  font-weight: 500;
+}
+
+.text-semi {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.section {
+  margin-top: 160px;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.btn {
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 15px 45px;
+  border: 1px solid transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-sm {
+  padding: 10px 20px;
+}
+
+.btn-lg {
+  padding: 30px 60px;
+}
+
+.btn-icon {
+  gap: 25px;
+}
+
+.btn-primary {
+  color: rgb(255, 255, 255);
+  background: var(--blue-gradient);
+}
+
+.btn-secondary {
+  font-weight: 500;
+  color: var(--blue-02);
+  background-color: var(--blue-01);
+}
+
+.btn-outlined {
+  font-weight: 500;
+  color: var(--blue-03);
+  border-color: var(--blue-03);
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-gradient);
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/*====================COMMON END=======================*/
+
+/*====================HEADER START=======================*/
+.header {
+  padding: 30px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__nav {
+  display: flex;
+  font-size: 14px;
+}
+
+.navbar__nav a {
+  padding: 13px;
+}
+
+.navbar__nav a:hover {
+  text-decoration: underline;
+}
+
+.navbar-contacts {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.navbar-contacts__wrap {
+  margin-right: 10px;
+}
+
+.phone__num {
+  font-weight: bold;
+}
+
+.navbar__timetable {
+  margin-top: 5px;
+  font-size: 10px;
+}
+.navbar-mobile {
+  display: none;
+}
+.hero-mobile-text {
+  display: none;
+}
+
+/*====================HEADER END=======================*/
+/*====================HERO START=======================*/
+
+.hero {
+  padding: 105px 0 160px 0;
+  min-height: 800px;
+  background: url('../img/hero-bg.webp') #e0e0e0 no-repeat center top / cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--blue-03);
+}
+
+.hero-text > .title {
+  margin-top: 20px;
+}
+
+.hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+/*====================HERO END=======================*/
         </style>
         <link rel="preload" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style"
             integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
@@ -25,28 +592,31 @@
 
     <body>
         <header class="header">
-            <nav class="container navbar">
-                <a href="/" class="logo"> ЖК на&nbsp;<span class="text-bold">Невском</span> </a>
-                <ul class="navbar__nav">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Документы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-                <div class="navbar-contacts">
-                    <div class="navbar-contacts__wrap">
-                        <p class="phone__num">+7 982 45-22-67</p>
-                        <p class="navbar__timetable">Пн-Пт. с 8:00 до 19:00</p>
+            <div class="container">
+                <nav class="navbar">
+                    <a href="/" class="logo"> ЖК на&nbsp;<span class="text-bold">Невском</span> </a>
+                    <ul class="navbar__nav">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="navbar-contacts">
+                        <div class="navbar-contacts__wrap">
+                            <p class="phone__num">+7 982 45-22-67</p>
+                            <p class="navbar__timetable">Пн-Пт. с 8:00 до 19:00</p>
+                        </div>
+                        <a href="tel:+7982452267" aria-label="Позвонить по номеру +7982452267" class="btn btn-circle"><i
+                                class="fas fa-phone-alt"></i></a>
                     </div>
-                    <a href="tel:+7982452267" aria-label="Позвонить по номеру +7982452267" class="btn btn-circle"><i
-                            class="fas fa-phone-alt"></i></a>
-                </div>
-            </nav>
-            <div class="container navbar-mobile">
-                <a href="\"><img src="./img/Logo-mobile.webp" alt="Logo" width="1" height="1" loading="lazy"
-                    decoding="async" class="header-mobile__logo"></a>
-                    <button class="btn btn-primary btn-sm header-btn-mobile">Меню<i class="fas fa-bars"></i></button>   
+                </nav>
+                <nav class="navbar-mobile">
+                    <a href="\"><img src="./img/Logo-mobile.webp" alt="Logo" width="1" height="1" loading="lazy"
+                            decoding="async" class="header-mobile__logo"></a>
+                    <button class="btn btn-primary btn-sm header-btn-mobile">Меню<i class="fas fa-bars"></i></button>
+                </nav>
             </div>
+
         </header>
         <main>
             <section class="hero">
@@ -62,11 +632,12 @@
                                     class="far fa-building"></i></button>
                             <button class="btn btn-outlined btn-icon btn-lg">Получить консультацию</button>
                         </div>
-                    </div> 
+                    </div>
 
                     <div class="hero-mobile-text">
                         <h1>
-                            Более <span class="text-blue-word">1000</span><br>комфортных квартир<br>от 2,3 млн рублей в<br>Дзержинском р-не Ярославля
+                            Более <span class="text-blue-word">1000</span><br>комфортных квартир<br>от 2,3 млн рублей
+                            в<br>Дзержинском р-не Ярославля
                         </h1>
                         <div class="hero-btn-mobile">
                             <button class="btn btn-primary btn-icon">Выбрать квартиру<i
@@ -321,26 +892,74 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section reviews">
                 <div class="container">
                     <h2 class="title">Отзывы наших клиентов</h2>
-                    <div class="reviews-wrap">
-                        <div class="reviews">
-                            <div class="reviews-person">
+                </div>
+                <div class="reviews-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="review swiper-slide">
+                            <div class="review__header">
                                 <img src="./img/Reviews-photo.webp" alt="partners" width="1" height="1" loading="lazy"
-                                    decoding="async" class="reviews__img" />
-                                <div class="review-person-data">
-                                    <h2 class="text-semi">Виталий Степанов</h2>
-                                    <p>Страница VK</p>
+                                    decoding="async" class="review__avatar" />
+                                <div class="review__author-data">
+                                    <h3 class="text-semi">Виталий Степанов</h3>
+                                    <a href="#">Страница VK</a>
                                 </div>
                             </div>
-                            <div class="person-comment">
-                                <p>Современные технологии достигли такого уровня, что<br> внедрение современных методик
-                                говорит о возможностях как<br> самодостаточных, так и внешне зависимых концептуальных<br>
-                                решений. Диаграммы связей объективно рассмотрены<br> соответствующими инстанциями.</p>
-                            </div>  
+                            <p class="review__text">Современные технологии достигли такого уровня, что внедрение
+                                современных методик говорит о возможностях как самодостаточных, так и внешне зависимых
+                                концептуальных решений. Диаграммы связей объективно рассмотрены соответствующими
+                                инстанциями.
+                            </p>
+                        </div>
+                        <div class="review swiper-slide">
+                            <div class="review__header">
+                                <img src="./img/Reviews-photo.webp" alt="partners" width="1" height="1" loading="lazy"
+                                    decoding="async" class="review__avatar" />
+                                <div class="review__author-data">
+                                    <h3 class="text-semi">Виталий Степанов</h3>
+                                    <a href="#">Страница VK</a>
+                                </div>
+                            </div>
+                            <p class="review__text">Современные технологии достигли такого уровня, что внедрение
+                                современных методик говорит о возможностях как самодостаточных, так и внешне зависимых
+                                концептуальных решений. Диаграммы связей объективно рассмотрены соответствующими
+                                инстанциями.
+                            </p>
+                        </div>
+                        <div class="review swiper-slide">
+                            <div class="review__header">
+                                <img src="./img/Reviews-photo.webp" alt="partners" width="1" height="1" loading="lazy"
+                                    decoding="async" class="review__avatar" />
+                                <div class="review__author-data">
+                                    <h3 class="text-semi">Виталий Степанов</h3>
+                                    <a href="#">Страница VK</a>
+                                </div>
+                            </div>
+                            <p class="review__text">Современные технологии достигли такого уровня, что внедрение
+                                современных методик говорит о возможностях как самодостаточных, так и внешне зависимых
+                                концептуальных решений. Диаграммы связей объективно рассмотрены соответствующими
+                                инстанциями.
+                            </p>
+                        </div>
+                        <div class="review swiper-slide">
+                            <div class="review__header">
+                                <img src="./img/Reviews-photo.webp" alt="partners" width="1" height="1" loading="lazy"
+                                    decoding="async" class="review__avatar" />
+                                <div class="review__author-data">
+                                    <h3 class="text-semi">Виталий Степанов</h3>
+                                    <a href="#">Страница VK</a>
+                                </div>
+                            </div>
+                            <p class="review__text">Современные технологии достигли такого уровня, что внедрение
+                                современных методик говорит о возможностях как самодостаточных, так и внешне зависимых
+                                концептуальных решений. Диаграммы связей объективно рассмотрены соответствующими
+                                инстанциями.
+                            </p>
                         </div>
                     </div>
+
                 </div>
             </section>
             <section class="section">
@@ -367,8 +986,8 @@
             <div class="footer-line">
                 <div class=" container container-questions">
                     <a href="/" class="footer__logo"> ЖК на&nbsp;<span class="text-bold">Невском</span> </a>
-                    <a href="/"><img src="./img/Footer-logo-mobile.webp" alt="footer-logo-mobile" width="1" height="1" loading="lazy"
-                        decoding="async" class="footer__logo-mobile" /></a>
+                    <a href="/"><img src="./img/Footer-logo-mobile.webp" alt="footer-logo-mobile" width="1" height="1"
+                            loading="lazy" decoding="async" class="footer__logo-mobile" /></a>
                     <div class="footer__questions">
                         <div class="footer__questions_text">
                             <h2 class="text-bold">Остались вопросы?</h2>
@@ -414,7 +1033,7 @@
                             <li><a href="#" aria-label="Посмотреть информацию на нашей странице в Инстаграм"><i
                                         class="fab fa-instagram"></i></a></li>
                         </div>
-                            <li class="footer-line_arrow"><a href="#" aria-label="Перейти к началу страницы"><i
+                        <li class="footer-line_arrow"><a href="#" aria-label="Перейти к началу страницы"><i
                                     class="fas fa-chevron-up"></i></a></li>
                     </ul>
                 </div>
@@ -423,5 +1042,4 @@
         <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <script defer src="./js/app.js"></script>
     </body>
-
 </html>
